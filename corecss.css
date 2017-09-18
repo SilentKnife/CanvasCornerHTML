@@ -1,0 +1,309 @@
+/*specifices body function*/
+body {
+  background-color:yello;
+	background-image: url(images/back1.jpg);
+	background-attachment: fixed;
+	background-repeat: repeat;
+}
+/*Container for the sites banner*/
+.site-banner {
+  margin: 68px 50px 0;
+	max-width: 12000px;
+	margin-top: 20px;
+	margin-bottom: -72px;
+  overflow:hidden;
+}
+
+/* The slider images for centering*/
+.image1{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+ 	height: auto;
+	width:auto;
+  max-width: 100%;
+}
+
+/*Container for main text, gives illusion that it is "above" the background*/
+.site-container {
+	background-color: white;
+	margin: 68px 50px 0;
+	max-width: 12000px;
+	margin-top: 0px;
+	overflow: hidden;
+	border: 1px solid white;
+	padding: 20px;
+	margin-bottom: 80px;
+
+}
+
+.site-footer {
+	background-color: #444;
+	margin: 68px 50px 0;
+	max-width: 12000px;
+	margin-top: -100px;
+	overflow: hidden;
+	border: 0.5px solid #444;
+	padding: 20px;
+	margin-bottom: 80px;
+
+}
+
+/* The slider images for centering*/
+.image2{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+ 	height: auto;
+	width:auto;
+  max-width: 100%;
+}
+
+/*Google Map*/
+#map {
+  margin-right: auto;
+  margin-left: auto;
+	margin-bottom: 20px;
+  height: 400px;
+	width:auto;
+  width:100%;
+  background-color: grey;
+}
+/*Banner image CSS */
+.image1{
+ 	height: auto;
+	width:auto;
+  max-width: 100
+}
+
+/* Offical Logo on body*/
+.image3{
+ 	height: auto;
+	width:auto;
+  max-width: 100%;
+	margin-left: auto;
+  margin-right: auto;
+	border-radius: 50%;
+	display: block;
+}
+
+/*Pro pics*/
+.image4{
+ 	height:343px;
+	width:296px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+	border-radius: 10%;
+  margin-left: 50px;
+  margin-right: 20px;
+
+}
+
+/*Pro pics*/
+.image5{
+ 	height:343px;
+	width:296px;
+  margin-top:   -20px;
+  margin-bottom: 30px;
+	border-radius: 10%;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+/* Mobile Nav Bar begins*/
+/* Nav Bar Begins*/
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+/* Change the link color on hover */
+.mobile a:hover {
+    background-color: #555;
+    color: white;
+}
+.mobile div {
+  display: none;
+}
+.mobile button {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  background: rgba(255,255,255,0.8) url("images/mbutton.png") center no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-size: 80%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.mobile a {
+  display: block;
+}
+
+a {
+  background: black;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+
+}
+
+.desktop {  
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin: 68px 50px 0;
+  height: auto;
+  background: black;
+
+
+}
+
+/* Desktop nav bar begins*/
+/* Change the link color on hover */
+.desktop a:hover {
+    background-color: #555;
+    color: white;
+}
+.desktop a {
+  width: 25%;
+  float: left;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+.desktop a:last-child {
+  border-right: none;
+}
+article {
+  padding: 0 0px opx;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.link {
+  background: white;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+
+/* Image Gallery */
+div.gallery {
+    border: 1px solid #ccc;
+	box-shadow: 5px 5px 5px #BABABA;
+    margin-top: 20px;
+    margin-bottom: 10px;
+	
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img  {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Defines what happens on browser resize*/
+@media (max-width: 800px) {
+	.mobile {
+		display:block;
+	}
+	.desktop {
+		display:none;
+	}
+}
+/* Nav Bar ends*/
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color:#bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #4CAF50
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* On smaller screens, decrease container size */
+@media only screen and (max-width: 600px) {
+	.site-container {margin: auto;}
+	.site-footer {margin:auto;}
+  .site-banner {margin:auto;}
+}

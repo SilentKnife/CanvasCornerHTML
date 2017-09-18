@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Seamus Moore">
+<meta name="description" content="Art Fanatics">
+<meta name="keywords" content="HTML, CSS, XML, XHTML, Art, new, awesome">
+<link rel="stylesheet" type="text/css" href="corecss.css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<title>Contact Us</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+
+<nav class="desktop">
+  <a href="index.html">Home</a>
+  <a class="active"a href="contact.html">Contact us</a>
+  <a href="about.html">Who are We?</a>
+  <a href="gallery.html">Gallery</a>
+</nav>
+
+<nav class="mobile">
+  <button>toggle</button>
+  <div>
+  <a href="index.html">Home</a>
+  <a href="contact.html">Contact us</a>
+  <a href="about.html">Who are We?</a>
+  <a href="gallery.html">Gallery</a>
+  </div>
+</nav>
+
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+
+		
+		jQuery('button').click(function(){
+		jQuery(this).toggleClass('expanded');
+		jQuery(".toggle").slideToggle();
+	});
+});
+
+$("button").click(function() {
+  $(this).toggleClass("expanded").siblings("div").slideToggle();
+});
+
+</script>
+
+
+
+<div class= "site-container"
+        <div class="site-container">
+
+
+<h1>How to reach us!</h1>
+<p style="font-size: 20px">The Canvas Corner art sessions are always hosted in one place, which is in Jane's humble abode located in the POMIS compound.
+  A map can be found below which can lead you to the POMIS Compound. House number and other specific details will only be provided once a 
+  booking is confirmed. It is done this way to preserve the safety of the host and for you as well.<br><br>
+
+<div id="map"></div>
+<script>
+      function initMap() {
+        var uluru = {lat: -9.468799, lng: 147.207806};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBywg4M4bQjFboeFvIvfTJuucC_9875sFY&callback=initMap">
+</script>
+
+</div>
+</header>
+
+<div class= "site-footer"
+
+<p style="color: white;"><b><center> Copyright Seamus Paul Moore 2017</center></b></p>
+<p><b><center> Contact Us At: mooresinpng@gmail.com</center></b></p>
+</div>
+</body>
+</html>

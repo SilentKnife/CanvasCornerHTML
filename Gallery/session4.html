@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Seamus Moore">
+<meta name="description" content="Art Fanatics">
+<meta name="keywords" content="HTML, CSS, XML, XHTML, Art, new, awesome">
+<link rel="stylesheet" type="text/css" href="../corecss.css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<title>Gallery</title>
+<link rel="shortcut icon" href="../images/favicon.ico" />
+</head>
+<body>
+
+<nav class="desktop">
+  <a href="../index.html">Home</a>
+  <a href="../contact.html">Contact us</a>
+  <a href="../about.html">Who are We?</a>
+  <a class="active" a href="../gallery.html">Gallery</a>
+</nav>
+
+<nav class="mobile">
+  <button>toggle</button>
+  <div>
+  <a href="../index.html">Home</a>
+  <a href="../contact.html">Contact us</a>
+  <a href="../about.html">Who are We?</a>
+  <a href="../gallery.html">Gallery</a>
+  </div>
+</nav>
+
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+
+		
+		jQuery('button').click(function(){
+		jQuery(this).toggleClass('expanded');
+		jQuery(".toggle").slideToggle();
+	});
+});
+
+$("button").click(function() {
+  $(this).toggleClass("expanded").siblings("div").slideToggle();
+});
+
+</script>
+
+
+
+<div class= "site-container"
+        <div class="site-container">
+            
+<a class="link" a href="../gallery.html">Back to Gallery</a>
+<h2>Session 4</h2>
+  <p> Gallery description here ipsum adosanfas oofsdjofnd sdfsdhsdhk f khsd fhs </p>
+
+
+</div>
+</header>
+
+<div class= "site-footer"
+
+<p style="color: white;"><b><center> Copyright Seamus Paul Moore 2017</center></b></p>
+<p><b><center> Contact Us At: mooresinpng@gmail.com</center></b></p>
+</div>
+</body>
+</html>

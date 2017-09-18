@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Seamus Moore">
+<meta name="description" content="Art Fanatics">
+<meta name="keywords" content="HTML, CSS, XML, XHTML, Art, new, awesome">
+<link rel="stylesheet" type="text/css" href="corecss.css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<title>About</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+
+<nav class="desktop">
+  <a href="index.html">Home</a>
+  <a href="contact.html">Contact us</a>
+  <a class="active" a href="about.html">Who are We?</a>
+  <a href="gallery.html">Gallery</a>
+</nav>
+
+<nav class="mobile">
+  <button>toggle</button>
+  <div>
+  <a href="index.html">Home</a>
+  <a href="contact.html">Contact us</a>
+  <a href="about.html">Who are We?</a>
+  <a href="gallery.html">Gallery</a>
+  </div>
+</nav>
+
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+
+		
+		jQuery('button').click(function(){
+		jQuery(this).toggleClass('expanded');
+		jQuery(".toggle").slideToggle();
+	});
+});
+
+$("button").click(function() {
+  $(this).toggleClass("expanded").siblings("div").slideToggle();
+});
+
+</script>
+
+
+<div class= "site-container"
+        <div class="site-container">
+
+
+<h1>Eileen Bayagau </h1>  
+  <div>
+  <img src="images/pro (1).jpg" class= "image5" align="right">
+</div>
+<p style="font-size: 20px">
+Is a Papua New Guinean artist who has a passion for sharing her creativity and talent with others.  
+She is a long time Art Teacher and a sought after artist.
+Her work is regularly on display at the Ella Beach market. Ebay, amongst other things,
+is a talented painter. She is also skilled in printmaking, drawing, design and handicrafts. 
+Ebay is the creative partner in Canvas Corner. She designs all of the artwork, trains new artists, 
+and is the main teacher for our our classes. Just browse through the image gallery to see some of her work.</p>
+<br>
+
+<h1> Jane Moore </h1>
+  <div>
+  <img src="images/pro (2).jpg" class= "image4" align="right">
+ </div>
+<p style="font-size: 20px">
+ Jane is Australian expat living in Papua New Guinea. She and her family have been in PNG for a number of years. 
+Sadly, possessing very little artistic talent of her own, she loves the opportunity to paint and draw 
+that the Canvas Corner classes provide. Jane manages the logistics – purchases, materials, provides a space for the art and 
+provides a fridge for the wine! If you have any questions – fire them her way – just click on the Email Us button on our 
+Facebook page or visit the Contact Us page.
+
+</p> 
+
+</div>
+</header>
+
+<div class= "site-footer"
+
+<p style="color: white;"><b><center> Copyright Seamus Paul Moore 2017</center></b></p>
+<p><b><center> Contact Us At: mooresinpng@gmail.com</center></b></p>
+</div>
+</body>
+</html>

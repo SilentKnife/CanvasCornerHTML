@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Seamus Moore">
+<meta name="description" content="Art Fanatics">
+<meta name="keywords" content="HTML, CSS, XML, XHTML, Art, new, awesome">
+<link rel="stylesheet" type="text/css" href="corecss.css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<title>Canvas Corner</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+
+<div class= "site-banner">
+    <img src="images/banner1.jpg" class= "image1">
+</div>
+
+<nav class="desktop">
+  <a class="active" a href="index.html">Home</a>
+  <a href="contact.html">Contact us</a>
+  <a href="about.html">Who are We?</a>
+  <a href="gallery.html">Gallery</a>
+</nav>
+
+<nav class="mobile">
+  <button>toggle</button>
+  <div>
+  <a href="index.html">Home</a>
+  <a href="contact.html">Contact us</a>
+  <a href="about.html">Who are We?</a>
+  <a href="gallery.html">Gallery</a>
+  </div>
+</nav>
+
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+
+		
+		jQuery('button').click(function(){
+		jQuery(this).toggleClass('expanded');
+		jQuery(".toggle").slideToggle();
+	});
+});
+
+$("button").click(function() {
+  $(this).toggleClass("expanded").siblings("div").slideToggle();
+});
+
+
+</script>
+
+
+<div class= "site-container"
+        <div class="site-container">
+
+
+<h1><center>Welcome to Canvas Corner!</center></h1>
+
+<p style="font-size: 20px">
+  Canvas Corner painting sessions are about having fun and being creative, and, hopefully, learning a bit about art. We aim to create a relaxing environment, where painters of all levels of skill can forget about the everyday pressures of life and enjoy a couple of hours of creative play. A place where you can relax, enjoy a wine and experiment with paint. 
+It’s simple; bring your own favourite bottle of wine or any other drink your fancy, and we’ll provide everything else. You’ll learn some of the basic techniques of painting on canvas. Over the course of the session, one of our artists will take you through the whole process step-by-step. By the end, you will have created a masterpiece to take home!
+<br>
+<br>
+ The price per person includes everything you’ll need for the session, except whatever you’d like to drink, which is always BYO. You’ll have your own station complete with: a blank canvas, paint, brushes, easel, apron, glassware for your beverages, and one of our artists there to support you through the creative process.
+ We have limited seating, so we do require booking in advance. Email us at <u>canvascornerpng@gmail.com</u> to reserve your place.
+ Our afternoon sessions start at 2pm. We recommend that you arrive a little early so you can settle in, pour a glass, and get your palette ready. Each session runs for one and a half to two hours. 
+<br>
+<br>
+Wear something that you feel comfortable in preferably something you don’t mind getting a little bit of paint on – just in case! 
+We encourage you to put your own personalised touches into your artwork. You are free to change the colors, the shapes, or paint your own original design. 
+</p>
+<b><h2>Canvas Corner Master Classes</h2></b>
+
+<p style="font-size: 20px">
+Canvas Corner master classes are about having fun and being creative, but there is a greater focus on skills and less on having something to take home and hang. Our Master classes aim to increase your skill as an artist and teach you some core techniques.  We aim to create a relaxing learning environment, where you can enjoy a couple of hours of immersed in art. Most Master classes run over 3 or 4 sessions and require a commitment to all sessions.
+Master classes are offered every 10 weeks or so, and each has a distinct focus. 
+Check out our Facebook page to keep track of our events to see what’s coming up next.</p>
+
+
+
+<div class="mySlides fade">
+  <img src="images/Session 3/art (1).jpg"class= "image2">
+
+</div>
+<div class="mySlides fade">
+  <img src="images/Session 1/art (13).jpg" class= "image2">
+
+</div>
+<div class="mySlides fade">
+  <img src="images/Session 2/art (2).jpg" class= "image2">
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Defines how long a image will show
+}
+</script>
+
+
+  
+</div>
+</header>
+
+<div class= "site-footer"
+
+<p style="color: white;"><b><center> Copyright Seamus Paul Moore 2017</center></b></p>
+<p><b><center> Contact Us At: mooresinpng@gmail.com</center></b></p>
+</div>
+</body>
+</html>

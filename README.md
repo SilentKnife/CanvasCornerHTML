@@ -1,2 +1,2 @@
 # CanvasCornerHTML
-The Canvas Corner Art Website
+Canvas Corner Website
