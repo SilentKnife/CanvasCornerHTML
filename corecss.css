@@ -5,7 +5,7 @@ body {
 	background-attachment: fixed;
 	background-repeat: repeat;
 }
-/*Container for the sites banner*/
+/*Container for the sites banner (REMOVED FOR NOW)*/
 .site-banner {
   margin: 68px 50px 0;
 	max-width: 12000px;
@@ -19,7 +19,7 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
- 	height: auto;
+  height: auto;
 	width:auto;
   max-width: 100%;
 }
@@ -189,12 +189,9 @@ article {
   padding: 0 0px opx;
 }
 
-.active {
-    background-color: #4CAF50;
-}
 
 .link {
-  background: white;
+  background-color: transparent;
   text-align: center;
   text-decoration: none;
   color:black;
@@ -279,7 +276,7 @@ body {font-family: Verdana,sans-serif;}
 }
 
 .active {
-  background-color: #4CAF50
+  background-color: #5A82FA
 }
 
 /* Fading animation */
